@@ -287,11 +287,11 @@ public partial class Form1 : Form
             //выводим дополнительную информацию
             try
             {
-                ChangeText(recoveredSizeText, "? x ?");
+                ChangeText(recoveredSizeText, recoveredPictureBox.Image.Height + " x" + recoveredPictureBox.Image.Width);
             }
             catch (InvalidOperationException)
             {
-                ChangeText(recoveredSizeText, recoveredPictureBox.Image.Height + " x" + recoveredPictureBox.Image.Width);
+                ChangeText(recoveredSizeText, "? x ?");
             }
             ChangeImage(recoveryKernalPictureBox, Converter.ToImage(Mull(filter.normalizedFilterMatrix, 255)));
 
