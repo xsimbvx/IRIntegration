@@ -16,3 +16,4 @@ Form1.cs | Основная и единствнная форма програм�
 
 ## Примеры работы
 
+![Пример](https://github.com/xsimbvx/IRIntegration/blob/master/Images/Example_01.JPG?raw=true "Example 1")
