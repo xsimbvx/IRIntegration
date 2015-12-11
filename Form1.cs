@@ -5,7 +5,7 @@ using ImageEditor;
 using ImageRecovery;
 using System.Threading;
 
-public partial class Form1 : Form
+public partial class Тест : Form
 {
     private Image sourceImage;                                      //исходное изображение
     private byte[,] noize = null;                                   //шум
@@ -68,7 +68,7 @@ public partial class Form1 : Form
     /// Конструктор
     /// </summary>
     /// <param name="path">Путь к открываемому файлу</param>
-    public Form1(string[] path)
+    public Тест(string[] path)
     {
         try
         {

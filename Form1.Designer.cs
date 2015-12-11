@@ -1,5 +1,5 @@
 ﻿
-partial class Form1
+partial class Тест
 {
     /// <summary>
     /// Требуется переменная конструктора.
@@ -83,7 +83,7 @@ partial class Form1
             this.NoiseButton.Name = "NoiseButton";
             this.NoiseButton.Size = new System.Drawing.Size(121, 23);
             this.NoiseButton.TabIndex = 6;
-            this.NoiseButton.Text = "Добавить";
+            this.NoiseButton.Text = "Добавить шум";
             this.NoiseButton.UseVisualStyleBackColor = true;
             this.NoiseButton.Click += new System.EventHandler(this.AddNoise);
             // 
@@ -169,7 +169,7 @@ partial class Form1
             this.sourceGroupBox.Size = new System.Drawing.Size(257, 433);
             this.sourceGroupBox.TabIndex = 3;
             this.sourceGroupBox.TabStop = false;
-            this.sourceGroupBox.Text = "Исходное";
+            this.sourceGroupBox.Text = "Исходное изображение";
             // 
             // sourceSizeText
             // 
@@ -203,7 +203,7 @@ partial class Form1
             this.blurGroupBox.Size = new System.Drawing.Size(257, 433);
             this.blurGroupBox.TabIndex = 4;
             this.blurGroupBox.TabStop = false;
-            this.blurGroupBox.Text = "Смазанное";
+            this.blurGroupBox.Text = "Смазанное изображение";
             // 
             // blurKernalPictureBox
             // 
@@ -255,7 +255,7 @@ partial class Form1
             this.noiseGroupBox.Size = new System.Drawing.Size(257, 433);
             this.noiseGroupBox.TabIndex = 5;
             this.noiseGroupBox.TabStop = false;
-            this.noiseGroupBox.Text = "Зашумленное";
+            this.noiseGroupBox.Text = "Зашумленное изображение";
             // 
             // noiseMaskPictureBox
             // 
@@ -306,7 +306,7 @@ partial class Form1
             this.RecoveryGroupBox.Size = new System.Drawing.Size(257, 433);
             this.RecoveryGroupBox.TabIndex = 6;
             this.RecoveryGroupBox.TabStop = false;
-            this.RecoveryGroupBox.Text = "Восстановленное";
+            this.RecoveryGroupBox.Text = "Восстановленное изображение";
             // 
             // InverseButton
             // 
@@ -314,7 +314,7 @@ partial class Form1
             this.InverseButton.Name = "InverseButton";
             this.InverseButton.Size = new System.Drawing.Size(242, 23);
             this.InverseButton.TabIndex = 11;
-            this.InverseButton.Text = "Инверсная";
+            this.InverseButton.Text = "Инверсная фильтрация";
             this.InverseButton.UseVisualStyleBackColor = true;
             this.InverseButton.Click += new System.EventHandler(this.Recovery);
             // 
@@ -354,7 +354,7 @@ partial class Form1
             this.recoveredSizeLabel.TabIndex = 9;
             this.recoveredSizeLabel.Text = "Размер:";
             // 
-            // Form1
+            // Тест
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -363,8 +363,8 @@ partial class Form1
             this.Controls.Add(this.noiseGroupBox);
             this.Controls.Add(this.blurGroupBox);
             this.Controls.Add(this.sourceGroupBox);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Тест";
+            this.Text = "Пример интеграции";
             ((System.ComponentModel.ISupportInitialize)(this.sourcePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blurPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noisePictureBox)).EndInit();
