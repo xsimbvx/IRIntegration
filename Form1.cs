@@ -280,11 +280,13 @@ public partial class Тест : Form
             {
                 case "InverseButton":
                     filter = blur;
-                    recoveredPictureBox.Image = InverseFiltering.Filtering(noisePictureBox.Image, blur);//filter.Convolution(new Bitmap(noisePictureBox.Image), ConvolutionFilter.ConvolutionMode.expand);
+                    ConvolutionFilter outfilter;
+                    recoveredPictureBox.Image = InverseFiltering.Filtering(noisePictureBox.Image, blur, out outfilter);
+                    filter = outfilter;
                     break;
 
             }
-            //выводим дополнительную информацию
+            //выводим дополнительную информациюC
             try
             {
                 ChangeText(recoveredSizeText, recoveredPictureBox.Image.Height + " x" + recoveredPictureBox.Image.Width);
