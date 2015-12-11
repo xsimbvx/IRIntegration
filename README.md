@@ -14,6 +14,9 @@
 Program.cs | Точка входа в программу
 Form1.cs | Основная и единствнная форма программы
 
+Окно программы содержи 4 области:
+* 
+
 ## Примеры работы
 
 ![Пример](https://github.com/xsimbvx/IRIntegration/blob/master/Images/Example_01.JPG "Example 1")
