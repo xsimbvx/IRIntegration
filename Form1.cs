@@ -4,6 +4,8 @@ using System.Windows.Forms;
 using ImageEditor;
 using ImageRecovery;
 using System.Threading;
+using System.Drawing.Imaging;
+
 
 public partial class Тест : Form
 {
@@ -302,4 +304,44 @@ public partial class Тест : Form
 
     }
 
+    /// <summary>
+    /// Окно сохранения изображений
+    /// </summary>
+    /// <param name="image"></param>
+    public static void SaveImage(Image image)
+    {
+        SaveFileDialog sfd = new SaveFileDialog();
+        sfd.Filter = "Images|*.png;*.bmp;*.jpg";
+        ImageFormat format = ImageFormat.Png;
+        if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+        {
+            string ext = System.IO.Path.GetExtension(sfd.FileName);
+            switch (ext)
+            {
+                case ".jpg":
+                    format = ImageFormat.Jpeg;
+                    break;
+                case ".bmp":
+                    format = ImageFormat.Bmp;
+                    break;
+            }
+            image.Save(sfd.FileName, format);
+        }
+    }
+
+ 
+    private void blurPictureBox_Click(object sender, EventArgs e)
+    {
+        SaveImage(((PictureBox)sender).Image);
+    }
+
+    private void noisePictureBox_Click(object sender, EventArgs e)
+    {
+        SaveImage(((PictureBox)sender).Image);
+    }
+
+    private void recoveredPictureBox_Click(object sender, EventArgs e)
+    {
+        SaveImage(((PictureBox)sender).Image);
+    }
 }

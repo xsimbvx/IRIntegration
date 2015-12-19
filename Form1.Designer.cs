@@ -137,6 +137,7 @@ partial class Тест
             this.blurPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.blurPictureBox.TabIndex = 0;
             this.blurPictureBox.TabStop = false;
+            this.blurPictureBox.Click += new System.EventHandler(this.blurPictureBox_Click);
             // 
             // noisePictureBox
             // 
@@ -147,6 +148,7 @@ partial class Тест
             this.noisePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.noisePictureBox.TabIndex = 0;
             this.noisePictureBox.TabStop = false;
+            this.noisePictureBox.Click += new System.EventHandler(this.noisePictureBox_Click);
             // 
             // recoveredPictureBox
             // 
@@ -157,6 +159,7 @@ partial class Тест
             this.recoveredPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.recoveredPictureBox.TabIndex = 0;
             this.recoveredPictureBox.TabStop = false;
+            this.recoveredPictureBox.Click += new System.EventHandler(this.recoveredPictureBox_Click);
             // 
             // sourceGroupBox
             // 
